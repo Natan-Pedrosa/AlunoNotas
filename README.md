@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Projeto Média do aluno
+
+Cadastra, edita e exclui aluno. Mostra a média e se foi aprovado ou não de acordo com a média 7. 
+
+## Limitações
+
+- Não possui validações
+- Css precisa melhoria
+- Dados são perdidos se sair

@@ -1,0 +1,36 @@
+<main>
+  <section class="form-container">
+    <form onsubmit="return false">
+      <input type="number" id="id">
+      <input type="text" id="nome">
+      <input type="number" id="nota1">
+      <input type="number" id="nota2">
+      <button (click)="adicionar()"><i class="fa-solid fa-plus"></i></button>
+    </form>
+  </section>
+  <section class="notas-container">
+    <div class="notas_content" >
+      <ul>
+        <li>
+          <span>Nome</span>
+          <span>Nota 1</span>
+          <span>Nota 2</span>
+          <span>Média</span>
+          <span>Aprovado ou Reprovado</span>
+          <span>Editar</span>
+          <span>Excluir</span>          
+        </li>
+        <li *ngFor="let alunoNotas of alunosNotas">
+          <span>{{alunoNotas.nome}}</span>
+          <span>{{alunoNotas.nota1}}</span>
+          <span>{{alunoNotas.nota2}}</span>
+          <span>{{alunoNotas.media}}</span>
+          <span>{{alunoNotas.aprovado ? "aprovado" : "reprovado"}}</span>
+          <button (click)="editarForm(alunoNotas)"><i class="fa-solid fa-pen-to-square"></i></button>
+          <button (click)="excluir(alunoNotas)"><i class="fa-sharp fa-solid fa-trash"></i></button>          
+        </li>
+      </ul>      
+    </div>
+    
+  </section>
+</main>
